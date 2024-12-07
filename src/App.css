@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.dark {
+  background-color: rgb(58, 58, 59);
+  color: aliceblue;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.post-card {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+a {
+  display: block;
+  color: rgb(40, 105, 210);
+  text-decoration: none;
+}
