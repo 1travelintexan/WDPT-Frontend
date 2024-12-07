@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { API_URL } from "../config/apiConfig";
 
 export const ProductListPage = () => {
   const [posts, setPosts] = useState([]);
@@ -8,7 +9,7 @@ export const ProductListPage = () => {
   const [inputState, setInputState] = useState("");
   function getAllPosts() {
     axios
-      .get("https://dummyjson.com/posts")
+      .get(`${API_URL}/posts`)
       .then((res) => {
         // the information that you want is always in the .data key with axios
         console.log(res.data.posts);
@@ -19,7 +20,6 @@ export const ProductListPage = () => {
   useEffect(() => {
     getAllPosts();
   }, []);
-
   //functions
   function handleSearch(e) {
     e.preventDefault();
